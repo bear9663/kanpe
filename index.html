@@ -1,0 +1,45 @@
+import random 
+fortunes = ['大吉', '吉', '凶', '大凶'] 
+fortune = random.choice(fortunes) 
+print(f'あなたの今日の運勢は') 
+print(fortune) print('です。') 
+///////////////// 
+import math print('半径rを入力してください。')
+print('r=')
+r=float(input())
+S=4*math.pi*r*r 
+L=4*math.pi*r*r*r/3 
+print('半径') 
+print(r) 
+print('mの球の表面積は')
+print('S={0}'.format(S)) 
+print('㎡で、体積は') 
+print('L={0}'.format(L)) 
+print('㎥です。') 
+//////////////// 
+your_age = float(input()) 
+if your_age >= 20:
+	print('どうぞ、どうぞ') 
+elif your_age >= 18: 
+	print('どうぞお入りください、でも酒やたばこはだめです') 
+else
+	print('18歳未満はお断りです') 
+////////////// 
+total = 0 
+i = 100 
+while i <= 400: 
+	if i % 2 == 0: 
+		total = total + i 
+	i = i + 1 
+print(total)
+ 
+//////////////
+limit = 1000 
+total = 0 
+for i in range(100, limit): 
+	for j in range(2, i):
+	 if i % j == 0:
+		 break 
+	 else: 
+		total = total + i:
+print(total)
