@@ -5,25 +5,21 @@ print('あなたの今日の運勢は')
 print(fortune) 
 print('です。') 
 ///////////////// 
-import math print('半径rを入力してください。')
+import math
+print('半径rを入力してください。')
 print('r=')
 r=float(input())
-S=4*math.pi*r*r 
-L=4*math.pi*r*r*r/3 
-print('半径') 
-print(r) 
-print('mの球の表面積は')
-print('S={0}'.format(S)) 
-print('㎡で、体積は') 
-print('L={0}'.format(L)) 
-print('㎥です。') 
+S=4*math.pi*r*r
+L=4*math.pi*r*r*r/3
+print(f"半径{r}mの球の表面積はS={0}{S}㎡で、体積はL={0}{L}㎥です。")
 //////////////// 
+print('年齢を教えてください')
 your_age = float(input()) 
 if your_age >= 20:
 	print('どうぞ、どうぞ') 
 elif your_age >= 18: 
 	print('どうぞお入りください、でも酒やたばこはだめです') 
-else
+else:
 	print('18歳未満はお断りです') 
 ////////////// 
 total = 0 
@@ -41,6 +37,6 @@ for i in range(100, limit):
 	for j in range(2, i):
 	 if i % j == 0:
 		 break 
-	 else: 
-		total = total + i:
+	else: 
+		total = total + i
 print(total)
